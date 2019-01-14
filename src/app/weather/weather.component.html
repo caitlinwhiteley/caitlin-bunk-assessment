@@ -7,22 +7,28 @@
 <div class="container">
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">BRISTOL</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">{{ bristol?.city }}</h5>
+        <p class="card-text">The temperature is {{ bristol?.temp }}&#176;C, with </p>
+        <p class="card-text">{{ bristol?.humidity }}&#37; humidity </p>
+        <p class="card-text">And a temperature range of {{ bristol?.minTemp }}&#176;C to {{ bristol?.maxTemp }}&#176;C </p>
       </div>
     </div>
   
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">LONDON</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">{{ london?.city }}</h5>
+        <p class="card-text">The temperature is {{ london?.temp }}&#176;C, with </p>
+        <p class="card-text">{{ london?.humidity }}&#37; humidity </p>
+        <p class="card-text">And a temperature range of {{ london?.minTemp }}&#176;C to {{ london?.maxTemp }}&#176;C </p>
       </div>
     </div>
   
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">ROME</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">{{ rome?.city }}</h5>
+        <p class="card-text">The temperature is {{ rome?.temp }}&#176;C, with </p>
+        <p class="card-text">{{ rome?.humidity }}&#37; humidity </p>
+        <p class="card-text">And a temperature range of {{ rome?.minTemp }}&#176;C to {{ rome?.maxTemp }}&#176;C </p>
       </div>
     </div>
 </div>
