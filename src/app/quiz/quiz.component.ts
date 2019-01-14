@@ -13,7 +13,6 @@ export class QuizComponent implements OnInit {
   constructor() { }
 
   validateInput(answer: {pizzaInput: string}) {
-    console.log(answer.pizzaInput)
     if (answer.pizzaInput === "Pizza" || answer.pizzaInput === "pizza") {
       this.correctAnswer = false;
       this.incorrectAnswer = true;

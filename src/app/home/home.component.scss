@@ -1,22 +1,42 @@
 @import "../../variables.scss";
 
-body {
+.containerr {
     display: flex;
     flex-direction: column;
+    padding: 16px;
 
     div {
         margin: 50px auto;
     }
 }
 
+.jumbotron {
+    text-align: center;
+}
+
+.card {
+    cursor: pointer;
+    margin-top: 16px !important;
+}
+
+.card-body {
+    margin-top: 16px !important;
+}
+
+img {
+
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: $tablet) {
-    body {
+    .containerr {
         flex-direction: row;
     }
 }
 
 @media (min-width: $small-screen) {
-body {
+.containerr {
     flex-direction: row;
 }
 }
