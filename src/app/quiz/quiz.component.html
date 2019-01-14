@@ -1,3 +1,34 @@
-<p>
-  quiz works!
-</p>
+<body>
+
+  <h1>
+    Super short quiz time!
+  </h1>
+
+  <div>
+    <p>I’m something that smells cheesy</p>
+    <p>But I’m not a pair of socks</p>
+    <p>I am a food that is sliced</p>
+    <p>And delivered in a box</p>
+  </div>
+  
+    <form #pizzaForm="ngForm" (ngSubmit)="validateInput(pizzaForm.value); pizzaForm.reset()">
+      <label for="question">
+        What am I?
+      </label>
+      <input
+        id="question"
+        type="text"
+        ngModel
+        #pizzaInput="ngModel"
+        name="pizzaInput"
+        style="text-transform: capitalize;"
+        required
+      >
+      <button type="submit">Submit your answer</button>
+    </form>
+
+    <p [hidden]="correctAnswer">Correct!!</p>
+    <p [hidden]="incorrectAnswer">Incorrect, try again</p>
+
+
+</body>

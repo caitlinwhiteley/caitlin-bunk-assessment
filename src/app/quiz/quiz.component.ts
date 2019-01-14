@@ -7,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
 
+  correctAnswer: boolean = true;
+  incorrectAnswer: boolean = true;
+
   constructor() { }
+
+  validateInput(answer: {pizzaInput: string}) {
+    console.log(answer.pizzaInput)
+    if (answer.pizzaInput === "Pizza" || answer.pizzaInput === "pizza") {
+      this.correctAnswer = false;
+      this.incorrectAnswer = true;
+    } else {
+      this.correctAnswer = true;
+      this.incorrectAnswer = false;
+    }
+  }
 
   ngOnInit() {
   }

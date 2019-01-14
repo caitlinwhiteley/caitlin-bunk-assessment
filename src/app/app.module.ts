@@ -12,6 +12,7 @@ import { FootballComponent } from './football/football.component';
 // Extras
 import { RouterModule } from '@angular/router'
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: "", component: HomeComponent},
       {path: "weather", component: WeatherComponent},
