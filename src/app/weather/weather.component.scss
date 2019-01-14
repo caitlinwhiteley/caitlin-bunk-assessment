@@ -1,5 +1,26 @@
 @import "../../variables.scss";
 
+body {
+    background-image: url('../../assets/images/weather.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-body {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.card-title {
+    font-size: 1.7em;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -7,6 +28,14 @@
     div {
         margin: 50px auto;
     }
+}
+
+.big {
+    font-size: $text-lg;
+}
+
+.small {
+    font-size: $text-md;
 }
 
 @media (min-width: $tablet) {
