@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: $tablet) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: $small-screen) {
+body {
+    flex-direction: row;
+}
+}
