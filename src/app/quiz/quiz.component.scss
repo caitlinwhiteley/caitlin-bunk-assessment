@@ -1,0 +1,52 @@
+body {
+    background-image: url('../../assets/images/pizza.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+}
+
+.paler-background {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto 30px;
+    border: solid white 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+p {
+    margin-bottom: 2px;
+}
+
+form {
+    padding: 30px 0;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: solid white 3px;
+}
+
+button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+input {
+    background-color: white;
+    border: solid white 3px;
+    display: block;
+    margin: 10px auto;
+}
+
+.success {
+    color: green;
+}
+
+.danger {
+    color: red;
+}

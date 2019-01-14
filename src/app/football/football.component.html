@@ -1,3 +1,48 @@
-<p>
-  football works!
-</p>
+
+  <h2>Create your ideal Borussia Mönchengladbach starting eleven </h2>
+  
+  <p> Goalies </p>
+  <ul *ngFor="let player of goalkeepers">
+    <li>
+      {{ player.name }}
+    </li>
+    <li>
+      <button [disabled]="goalkeepersFull" (click)="addGoalie(player.id)">Add</button>
+    </li>
+  </ul>
+  
+  <p> Attackers </p>
+  <ul *ngFor="let player of attackers">
+    <li>
+      {{ player.name }}
+    </li>
+    <li>
+        <button [disabled]="attackersFull" (click)="addAttacker(player.id)">Add</button>
+      </li>
+  </ul>
+
+  <p> Defenders </p>
+  <ul *ngFor="let player of defenders">
+    <li>
+      {{ player.name }}
+    </li>
+    <li>
+        <button [disabled]="defendersFull" (click)="addDefender(player.id)">Add</button>
+      </li>
+  </ul>
+
+  <p> Attackers </p>
+  <ul *ngFor="let player of midfielders">
+    <li>
+      {{ player.name }}
+    </li>
+    <li>
+        <button [disabled]="midfieldersFull" (click)="addMidfielder(player.id)">Add</button>
+      </li>
+  </ul>
+  
+  <!-- <form #goaliesForm="ngForm">
+    <div *ngFor="let goalie of goalkeepers">
+      <input type="text">
+    </div>
+  </form> -->
