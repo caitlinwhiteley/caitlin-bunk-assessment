@@ -1,9 +1,11 @@
+@import "../../variables.scss";
+
 body {
     background-image: url('../../assets/images/pizza.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     margin: 0;
-    padding: 30px;
+    padding: 10px;
 }
 
 .paler-background {
@@ -49,4 +51,10 @@ input {
 
 .danger {
     color: red;
+}
+
+@media (min-width: $small-screen) {
+    body {
+        padding: 30px;
+    }
 }

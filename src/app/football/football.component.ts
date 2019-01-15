@@ -75,7 +75,7 @@ export class FootballComponent implements OnInit {
 
   addGoalie(id: number) {
     for (let index = 0; index < this.playerss.length; index++) {
-      if (this.playerss[index].id === id) {
+      if (this.playerss[index].id === id && !this.chosenGoalkeeper.includes(this.playerss[index].name)) {
         this.chosenGoalkeeper.push(this.playerss[index].name)
       }
     }
@@ -84,7 +84,7 @@ export class FootballComponent implements OnInit {
 
   addMidfielder(id: number) {
     for (let index = 0; index < this.playerss.length; index++) {
-      if (this.playerss[index].id === id) {
+      if (this.playerss[index].id === id && !this.chosenMidfielders.includes(this.playerss[index].name)) {
         this.chosenMidfielders.push(this.playerss[index].name)
       }
     }
@@ -93,7 +93,7 @@ export class FootballComponent implements OnInit {
 
   addAttacker(id: number) {
     for (let index = 0; index < this.playerss.length; index++) {
-      if (this.playerss[index].id === id) {
+      if (this.playerss[index].id === id && !this.chosenAttackers.includes(this.playerss[index].name)) {
         this.chosenAttackers.push(this.playerss[index].name)
       }
     }
@@ -102,7 +102,7 @@ export class FootballComponent implements OnInit {
 
   addDefender(id: number) {
     for (let index = 0; index < this.playerss.length; index++) {
-      if (this.playerss[index].id === id) {
+      if (this.playerss[index].id === id && !this.chosenDefenders.includes(this.playerss[index].name)) {
         this.chosenDefenders.push(this.playerss[index].name)
       }
     }

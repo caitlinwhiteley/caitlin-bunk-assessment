@@ -7,33 +7,33 @@
 <div class="container">
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">{{ bristol?.city }}</h5>
-        <p class="card-text">The temperature is <span class="big">{{ bristol?.temp }}&#176;C</span></p>
+        <h5 class="card-title bold">{{ bristol?.city }}</h5>
+        <p class="card-text">The temperature is <span class="big bold">{{ bristol?.temp }}&#176;C</span></p>
         <p>with</p>
-        <p class="card-text"><span class="big">{{ bristol?.humidity }}&#37;</span> humidity </p>
-        <p class="card-text"><span class="small">And a temperature range of</span> {{ bristol?.minTemp }}&#176;C <span class="small">to</span> {{ bristol?.maxTemp }}&#176;C </p>
+        <p class="card-text"><span class="big bold">{{ bristol?.humidity }}&#37;</span> humidity </p>
+        <p class="card-text"><span class="small">And a temperature range of </span> <span class="bold">{{ bristol?.minTemp }}&#176;C <span class="small">to</span> {{ bristol?.maxTemp }}&#176;C </span></p>
       </div>
     </div>
   
     <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">{{ london?.city }}</h5>
-        <p class="card-text">The temperature is <span class="big">{{ london?.temp }}&#176;C</span></p>
-        <p><span class="small">with</span></p>
-        <p class="card-text"><span class="big">{{ london?.humidity }}&#37;</span> humidity </p>
-        <p class="card-text"><span class="small">And a temperature range of</span> {{ london?.minTemp }}&#176;C <span class="small">to</span> {{ london?.maxTemp }}&#176;C </p>
+        <div class="card-body">
+          <h5 class="card-title bold">{{ london?.city }}</h5>
+          <p class="card-text">The temperature is <span class="big bold">{{ london?.temp }}&#176;C</span></p>
+          <p>with</p>
+          <p class="card-text"><span class="big bold">{{ london?.humidity }}&#37;</span> humidity </p>
+          <p class="card-text"><span class="small">And a temperature range of </span> <span class="bold">{{ london?.minTemp }}&#176;C <span class="small">to</span> {{ london?.maxTemp }}&#176;C </span></p>
+        </div>
       </div>
-    </div>
   
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">{{ rome?.city }}</h5>
-        <p class="card-text">The temperature is <span class="big">{{ rome?.temp }}&#176;C</span></p>
-        <p>with</p>
-        <p class="card-text"><span class="big">{{ rome?.humidity }}&#37;</span> humidity </p>
-        <p class="card-text"><span class="small">And a temperature range of</span> {{ rome?.minTemp }}&#176;C <span class="small">to</span> {{ rome?.maxTemp }}&#176;C </p>
-      </div>
-    </div>
+      <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title bold">{{ rome?.city }}</h5>
+            <p class="card-text">The temperature is <span class="big bold">{{ rome?.temp }}&#176;C</span></p>
+            <p>with</p>
+            <p class="card-text"><span class="big bold">{{ rome?.humidity }}&#37;</span> humidity </p>
+            <p class="card-text"><span class="small">And a temperature range of </span> <span class="bold">{{ rome?.minTemp }}&#176;C <span class="small">to</span> {{ rome?.maxTemp }}&#176;C </span></p>
+          </div>
+        </div>
 
 </div>
   

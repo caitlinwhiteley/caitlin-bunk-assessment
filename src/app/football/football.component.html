@@ -1,52 +1,76 @@
-
-  <h2>Create your ideal Borussia Mönchengladbach starting eleven </h2>
+<body>
   
-  <p> Goalies </p>
-  <ul *ngFor="let player of goalkeepers">
-    <li>
-      {{ player.name }}
-    </li>
-    <li>
-      <button [disabled]="goalkeepersFull" (click)="addGoalie(player.id)">Add</button>
-    </li>
-  </ul>
-  
-  <p> Attackers </p>
-  <ul *ngFor="let player of attackers">
-    <li>
-      {{ player.name }}
-    </li>
-    <li>
-        <button [disabled]="attackersFull" (click)="addAttacker(player.id)">Add</button>
-      </li>
-  </ul>
+    <h2>Create your ideal Borussia Mönchengladbach starting eleven </h2>
+    
 
-  <p> Defenders </p>
-  <ul *ngFor="let player of defenders">
-    <li>
-      {{ player.name }}
-    </li>
-    <li>
-        <button [disabled]="defendersFull" (click)="addDefender(player.id)">Add</button>
-      </li>
-  </ul>
+      <div class="container">
 
-  <p> Attackers </p>
-  <ul *ngFor="let player of midfielders">
-    <li>
-      {{ player.name }}
-    </li>
-    <li>
-        <button [disabled]="midfieldersFull" (click)="addMidfielder(player.id)">Add</button>
-      </li>
-  </ul>
+        <div class="goalies player-position">
+          <p> Goalies </p>
+          <ul *ngFor="let player of goalkeepers">
+              <li>
+                  <button [disabled]="goalkeepersFull" (click)="addGoalie(player.id)">Add</button>
+                </li>
+            <li>
+              {{ player.name }}
+            </li>
+
+          </ul>
+        </div>
   
-<p>
-  Chosen players
-</p>
-<ul>
-    <!-- <li *ngFor="let index of chosenGoalkeeper.length">{{ chosenGoalkeeper }} </li>
-    <li *ngFor="let index of chosenAttacker.length">{{ chosenAttacker }} </li>
-    <li *ngFor="let index of chosenDefender.length">{{ chosenDefender }} </li>
-    <li *ngFor="let index of chosenMidfielder.length">{{ chosenMidfielder }} </li> -->
-</ul>
+        <div class="midfielders player-position">
+            <p> Midfielders </p>
+            <ul *ngFor="let player of midfielders">
+                <li>
+                    <button [disabled]="midfieldersFull" (click)="addMidfielder(player.id)">Add</button>
+                  </li>
+              <li>
+                {{ player.name }}
+              </li>
+            </ul>
+          </div>
+
+      
+      <div class="attackers player-position">
+        <p> Attackers </p>
+        <ul *ngFor="let player of attackers">
+            <li>
+                <button [disabled]="attackersFull" (click)="addAttacker(player.id)">Add</button>
+              </li>
+          <li>
+            {{ player.name }}
+          </li>
+        </ul>
+      </div>
+    
+      <div class="defenders player-position">
+        <p> Defenders </p>
+        <ul *ngFor="let player of defenders">
+            <li>
+                <button [disabled]="defendersFull" (click)="addDefender(player.id)">Add</button>
+              </li>
+          <li>
+            {{ player.name }}
+          </li>
+        </ul>
+      </div>
+      
+    <div class="chosen">
+      <h2>Chosen players</h2>
+      <ul>
+          <li *ngIf="chosenGoalkeeper.length!==0" class="player-position">Goalie:</li>
+          <li *ngFor="let player of chosenGoalkeeper">{{ player }} </li>
+      
+          <li *ngIf="chosenMidfielders.length!==0" class="player-position">Midfielders:</li>
+          <li *ngFor="let player of chosenMidfielders">{{ player }} </li>
+      
+          <li *ngIf="chosenAttackers.length!==0" class="player-position">Attackers:</li>
+          <li *ngFor="let player of chosenAttackers">{{ player }} </li>
+      
+          <li *ngIf="chosenDefenders.length!==0" class="player-position">Defenders:</li>
+          <li *ngFor="let player of chosenDefenders">{{ player }} </li>
+      </ul>
+    </div>
+    </div>
+
+</body>

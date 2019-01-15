@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+
+* {
+    list-style: none;
+}
+
+.goalies {
+    grid-area: goalies;
+}
+
+.attackers {
+    grid-area: attackers;
+}
+
+.defenders {
+    grid-area: defenders;
+}
+
+.midfielders {
+    grid-area: midfielders;
+}
+
+.chosen {
+    grid-area: chosen;
+    position: sticky;
+    top: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "goalies  chosen"
+        "attackers chosen"
+        "midfielders chosen"
+        "defenders chosen";
+    grid-template-columns: 1fr 1fr;
+}
+
+.player-position {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+ul {
+    padding: 0;
+}
+
+@media (min-width: $tablet) {
+    .container {
+        grid-template-areas:
+            "goalies defenders midfielders chosen"
+            "attackers defenders midfielders chosen";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: $small-screen) {
+    .container {
+        grid-template-areas:
+            "goalies defenders midfielders chosen"
+            "attackers defenders midfielders chosen";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
