@@ -1,27 +1,18 @@
 # CaitlinBunk
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.7.
+I found the timing of this project to be the biggest challenge.
 
-## Development server
+In terms of functionality, I got everything working that I wanted. If the project time was to be extended, I would look in to using local storage to save the team, as all the players are lost whenever you leave the page, and be able to also delete them from the team if you no longer want them.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+In terms of cleaning up the code:
+-I would move a lot of the football.component.ts code into the football service I created
+-I would tidy up my CSS a lot and use the global styles more for overlapping code
+-I would include more breakpoints in my code
+-Error catch
 
-## Code scaffolding
+For the look and feel of the page:
+-Include pictures in the cards on the home page
+-Add a picture for each weather card, which would be dependant on the weather. For this I would make it dependent on the "main" key in the API object
+-I would probably hide all the players of each position, and have a "select a defender" button which then shows all the defenders, and hides the list once you've picked 4. This will clear up the page, as it is currently quite busy, and then I will have more space to play around with the look and feel.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Apart from all that, I am happy with what I have achieved within the timeframe, although it does bother me how a lot of it looks as I usually like spending time on the design
