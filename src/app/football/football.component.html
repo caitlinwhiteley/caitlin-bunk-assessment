@@ -6,7 +6,7 @@
       <div class="container">
 
         <div class="goalies player-position">
-          <p> Goalies </p>
+          <h3>Goalies</h3>
           <ul *ngFor="let player of goalkeepers">
               <li>
                   <button [disabled]="goalkeepersFull" (click)="addGoalie(player.id)">Add</button>
@@ -19,7 +19,7 @@
         </div>
   
         <div class="midfielders player-position">
-            <p> Midfielders </p>
+            <h3>Midfielders</h3>
             <ul *ngFor="let player of midfielders">
                 <li>
                     <button [disabled]="midfieldersFull" (click)="addMidfielder(player.id)">Add</button>
@@ -32,7 +32,7 @@
 
       
       <div class="attackers player-position">
-        <p> Attackers </p>
+        <h3>Attackers</h3>
         <ul *ngFor="let player of attackers">
             <li>
                 <button [disabled]="attackersFull" (click)="addAttacker(player.id)">Add</button>
@@ -44,7 +44,7 @@
       </div>
     
       <div class="defenders player-position">
-        <p> Defenders </p>
+        <h3>Defenders</h3>
         <ul *ngFor="let player of defenders">
             <li>
                 <button [disabled]="defendersFull" (click)="addDefender(player.id)">Add</button>
