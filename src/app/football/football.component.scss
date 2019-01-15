@@ -45,6 +45,15 @@ ul {
     padding: 0;
 }
 
+button {
+    font-size: 0.6em;
+    width: auto;
+    background-color: $secondary-colour;
+    border: solid 3px $primary-colour;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 @media (min-width: $tablet) {
     .container {
         grid-template-areas:
