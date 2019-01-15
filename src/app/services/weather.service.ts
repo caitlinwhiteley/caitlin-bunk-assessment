@@ -33,7 +33,7 @@ export class WeatherService {
   }
 
   convertKelvin(kelvin: number): number {
-    const celcius = (kelvin - 273.15).toFixed(2);
+    const celcius = (kelvin - 273.15).toFixed(1);
     return Number(celcius);
   }
 
