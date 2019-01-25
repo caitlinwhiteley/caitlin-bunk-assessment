@@ -1,5 +1,7 @@
 # CaitlinBunk
 
+5 hour tech assessment
+
 I found the timing of this project to be the biggest challenge.
 
 In terms of functionality, I got everything working that I wanted. If the project time was to be extended, I would look in to using local storage to save the team, as all the players are lost whenever you leave the page, and be able to also delete them from the team if you no longer want them.
